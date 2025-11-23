@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>My Portfolio</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>My Portfolio</h1>
+    <div class="menu-toggle" onclick="toggleMenu(this)">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <img src="images/profile.webp" alt="Profile">
+    <h2>Hello, I'm Lumiere</h2>
+    <p>A Passionate Web Developer focusing on clean, modern and user-friendly websites. I build frontend and backend solutions using HTML, CSS, JavaScript, and Python.</p>
+    <button class="btn-primary" onclick="scrollToSection('projects')">View My Work</button>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p style="margin-top:15px; max-width:800px;">I am a developer who loves building modern applications and learning new technologies. I specialize in web design, backend development, and creative digital solutions. I enjoy solving real problems using clean and structured code.</p>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects" style="margin-top:30px;">
+        <div class="project">
+            <img src="images/web dev.jpg" alt="Project Image" style="width:100%; border-radius:8px; margin-bottom:15px;">
+            <h3>Project 1</h3>
+            <p>A modern landing page built using HTML, CSS, and JavaScript with animations and responsive design.</p>
+        </div>
+        <div class="project">
+            <img src="images/system admin.jpg" alt="Project Image" style="width:100%; border-radius:8px; margin-bottom:15px;">
+            <h3>Project 1</h3>
+            <p>A modern landing page built using HTML, CSS, and JavaScript with animations and responsive design.</p>
+        </div>
+        <div class="project">
+            <img src="images/database.jpg" alt="Project Image" style="width:100%; border-radius:8px; margin-bottom:15px;">
+            <h3>Project 1</h3>
+            <p>A modern landing page built using HTML, CSS, and JavaScript with animations and responsive design.</p>
+        </div>
+        <div class="project">
+            <img src="images/data analysis.jpg" alt="Project Image" style="width:100%; border-radius:8px; margin-bottom:15px;">
+            <h3>Project 1</h3>
+            <p>A modern landing page built using HTML, CSS, and JavaScript with animations and responsive design.</p>
+        </div>
+        <div class="project">
+            <img src="images/database.jpg" alt="Project Image" style="width:100%; border-radius:8px; margin-bottom:15px;">
+            <h3>Project 1</h3>
+            <p>A modern landing page built using HTML, CSS, and JavaScript with animations and responsive design.</p>
+        </div>
+        <div class="project">
+            <img src="images/database.jpg" alt="Project Image" style="width:100%; border-radius:8px; margin-bottom:15px;">
+            <h3>Project 1</h3>
+            <p>A modern landing page built using HTML, CSS, and JavaScript with animations and responsive design.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2025 Lumiere Portfolio | All Rights Reserved</p>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
